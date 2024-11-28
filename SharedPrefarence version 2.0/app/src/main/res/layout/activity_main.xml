@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textSize="22sp"
+        android:id="@+id/display"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/display_bg"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:gravity="center"
+        android:elevation="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Name"
+        android:minHeight="48dp"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="E-Mail"
+        android:minHeight="48dp"
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#009688"
+        app:cursorColor="#009688"
+        app:hintTextColor="#009688"
+        android:textColorHint="#83636363"
+        app:endIconMode="password_toggle"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        android:layout_marginBottom="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#009688"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            android:hint="Password"
+            android:id="@+id/editText3"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="Submit Data"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="#FF0084"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:text="Show Data"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:text="Reset Data"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="30dp"
+        android:textAllCaps="false"
+        android:background="@drawable/shadow_btn_one"
+        android:elevation="10dp"
+        />
+
+</LinearLayout>
